@@ -1,9 +1,5 @@
 ---
 title: "Guia Archivo de Zona Franca"
-output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
 ---
 
 </br>
