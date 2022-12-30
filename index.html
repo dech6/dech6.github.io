@@ -32,6 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -243,14 +245,27 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Zona Franca</a>
+  <a href="index.html">
+    <span class="fa fa-solid fa-truck-bolt"></span>
+     
+    Zona Franca
+  </a>
 </li>
 <li>
-  <a href="about.html">Proyecciones</a>
+  <a href="about.html">
+    <span class="fa fa-solid fa-chart-simple"></span>
+     
+    Proyecciones
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/dech6">
+    <span class="fa fa-brands fa-github"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -268,9 +283,7 @@ $(document).ready(function () {
 <p></br> </br></p>
 <div id="pasos-a-seguir-para-utilizar-el-programa" class="section level2">
 <h2>Pasos a Seguir para utilizar el programa</h2>
-<ul>
-<li><strong>Primero:</strong></li>
-</ul>
+<p></br> </br> </br> * <strong>Primero:</strong></p>
 <p>En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.</p>
 <pre class="r"><code>#Cargamos los datos
 X1666624860 &lt;- read_excel(&quot;D:/1- Escritorio organizado/Zona Franca e2/1666624860.xlsx&quot;, sheet = &quot;Data&quot;)</code></pre>

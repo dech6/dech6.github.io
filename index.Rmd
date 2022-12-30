@@ -6,7 +6,9 @@ title: "Guia Archivo de Zona Franca"
 </br>
 
 ## Pasos a Seguir para utilizar el programa
-
+</br>
+</br>
+</br>
 * **Primero:** 
 
 En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.

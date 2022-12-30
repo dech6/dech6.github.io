@@ -5,8 +5,13 @@ navbar:
   left:
     - text: "Zona Franca"
       href: index.html
+      icon: fa-solid fa-truck-bolt
     - text: "Proyecciones"
       href: about.html
+      icon: fa-solid fa-chart-simple
+  right:
+    - icon: fa-brands fa-github
+      href: https://github.com/dech6
 output:
   html_document:
     theme: cosmo
