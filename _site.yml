@@ -1,9 +1,14 @@
-name: "my-website"
+name: "Guia para uso de R"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "R studio"
   left:
-    - text: "Home"
+    - text: "Zona Franca"
       href: index.html
-    - text: "About"
+    - text: "Proyecciones"
       href: about.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    css: styles.css

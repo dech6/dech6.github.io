@@ -1,5 +1,66 @@
 ---
-title: "My Website"
+title: "Guia Archivo de Zona Franca"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
 ---
 
-Hello, Website!
+</br>
+</br>
+
+## Pasos a Seguir para utilizar el programa
+
+* **Primero:** 
+
+En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.
+
+```{r,eval=FALSE}
+#Cargamos los datos
+X1666624860 <- read_excel("D:/1- Escritorio organizado/Zona Franca e2/1666624860.xlsx", sheet = "Data")
+
+```
+
+La direccion debe ir entre comillas, si borras las comillas debes volver a ponerlas.
+
+</br>
+
+<font size="3">*Nota: las direcciones deben ir con barra normal `/` , no con la barra inversa `\` ya que puede generar error.* </font>
+
+</br>
+</br>
+</br>
+</br>
+
+* **Segundo:**
+
+Luego, en la siguente linea de codigo `mypath` debemos indicarle la direccion donde queremos que se guarde nuestro archivo en formato excel una vez que corramos el codigo.
+
+```{r, eval=FALSE}
+mypath <- "D:/1- Escritorio organizado/Zona Franca e2/"
+```
+
+Para esto hacemos lo mismo que el paso anterior, simplemente remplazamos la direccion que se encuentra entre comillas en el codigo por la nueva direccion. 
+
+</br>
+</br>
+</br>
+</br>
+
+* **Tercero:**
+
+Listo, el codigo esta listo para utilizarlo. 
+
+Seleccionamos de la linea 1 hasta la linea 22 del codigo.
+Presionamos el icono de ![Run](D:\Descargass\Untitled (2).png) en la parte superior derecha. (*tambien su puede correr el codigo seleccionado con* `CTRL + ENTER`). Una vez realizado esto se creara un archivo llamado *filtro.xlsx* que contendra las columnas filtradas de la base de datos.
+
+</br>
+</br>
+
+<font size="3"> *Nota: Hay que tener en cuenta que este proceso se debe realizar cada vez que se tenga un archivo nuevo.* </font>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
