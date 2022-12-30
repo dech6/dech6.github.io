@@ -9,9 +9,11 @@ navbar:
     - text: "Proyecciones"
       icon: fa-solid fa-chart-simple
       href: about.html
-  right:
-    - icon: fa-brands fa-github
-      href: https://github.com/dech6
+      menu:
+        - text: "Heading 1"
+        - text: "Page A"
+        - text: "---------"
+        - text: "Page B"
 output:
   html_document:
     theme: cosmo
