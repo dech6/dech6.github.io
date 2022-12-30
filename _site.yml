@@ -4,11 +4,11 @@ navbar:
   title: "R studio"
   left:
     - text: "Zona Franca"
+      icon: fa-solid fa-truck-fast
       href: index.html
-      icon: fa-solid fa-truck-bolt
     - text: "Proyecciones"
-      href: about.html
       icon: fa-solid fa-chart-simple
+      href: about.html
   right:
     - icon: fa-brands fa-github
       href: https://github.com/dech6
