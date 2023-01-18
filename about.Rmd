@@ -1,16 +1,21 @@
 ---
 title: "Guia Archivo de Proyecciones"
+subtitle: "Proyeccion de Inflacion, TRM y PPC mensual"
+
 ---
-
+```{r,include=FALSE , cache=FALSE}
+library(fontawesome)
+```
+ 
 </br>
 </br>
 
-## Pasos a Seguir para utilizar el programa
+### Pasos a Seguir para utilizar el programa
 </br>
 </br>
 
 
-#### **Primero: Carga de datos**
+## **Primero: Carga de datos**
 
 Para poder utilizar el programa, debemos indicarle donde se encuentran nuestros archivos que les queremos ejecutar la proyeccion (*Inflacion ,TRM y PPC*). 
 
@@ -57,4 +62,16 @@ PPC <- read_excel("~/Daniel Echavez/Ventas Serie de tiempo/Proyeccioes Nuevas/Pr
 
 </br>
 
-#### *Segundo - *
+## **Segundo - ¿Donde se guardan las proyecciones?**
+
+Una vez hecho el paso anterior, el codigo esta listo para utilizarlo. Para correr todo el codigo utilizamos el atajo `CTRL + SHIFT + ENTER`. Una vez realizado esto se creara un archivo llamado *TasaCambio_Inflacion_PPC_Proyeccion.xlsx* que contendra las proyecciones en cada una de las hojas del archivo de excel.
+
+</br>
+</br>
+*Nota: Hay que tener en cuenta que este proceso se debe realizar cada vez que se tenga un archivo nuevo.* 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>

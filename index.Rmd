@@ -1,7 +1,9 @@
 ---
 title: "Guia Archivo de Zona Franca"
 ---
-
+```{r,include=FALSE , cache=FALSE}
+library(fontawesome)
+```
 </br>
 </br>
 
@@ -10,7 +12,7 @@ title: "Guia Archivo de Zona Franca"
 </br>
 </br>
 
-#### *Primero - Carga de datos*
+## **Primero - Carga de datos**
 
 En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.
 
@@ -28,7 +30,7 @@ La direccion debe ir entre comillas, si borras las comillas debes volver a poner
 
 </br>
 
-#### *Segundo - Guardar Archivos*
+## **Segundo - Guardar Archivos**
 
 Luego, en la siguente linea de codigo `mypath` debemos indicarle la direccion donde queremos que se guarde nuestro archivo en formato excel una vez que corramos el codigo.
 
@@ -40,7 +42,7 @@ Para esto hacemos lo mismo que el paso anterior, simplemente remplazamos la dire
 </br>
 </br>
 
-#### *Tercero - Ejecutar el codigo*
+## **Tercero - Ejecutar el codigo**
 
 Listo, el codigo esta listo para utilizarlo. 
 

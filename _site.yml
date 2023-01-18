@@ -1,7 +1,6 @@
 name: "Guia para uso de R"
 output_dir: "."
 navbar:
-  title: "R studio"
   left:
     - text: "Zona Franca"
       icon: fa-solid fa-truck-fast
@@ -11,7 +10,4 @@ navbar:
       href: about.html
     
 output:
-  html_document:
-    theme: cosmo
-    highlight: textmate
-    css: styles.css
+  rmdformats::downcute
