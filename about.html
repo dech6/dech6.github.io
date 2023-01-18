@@ -11,7 +11,7 @@
 
 
 
-<title>About This Website</title>
+<title>Guia Archivo de Proyecciones</title>
 
 <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -274,13 +274,50 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About This Website</h1>
+<h1 class="title toc-ignore">Guia Archivo de Proyecciones</h1>
 
 </div>
 
 
-<p>More about this website.</p>
-<p><em>me gusta</em></p>
+<p></br> </br></p>
+<div id="pasos-a-seguir-para-utilizar-el-programa"
+class="section level2">
+<h2>Pasos a Seguir para utilizar el programa</h2>
+<p></br> </br></p>
+<div id="primero-carga-de-datos" class="section level4">
+<h4><strong>Primero: Carga de datos</strong></h4>
+<p>Para poder utilizar el programa, debemos indicarle donde se
+encuentran nuestros archivos que les queremos ejecutar la proyeccion
+(<em>Inflacion ,TRM y PPC</em>).</p>
+<p>Para hacer esto, cambiamos la primera parte del codigo que empieza
+entre comillas despues del primer parentesis y hasta la primera coma.
+Todo lo demas lo dejamos igual.</p>
+<p></br></p>
+<p>Para los datos de TRM se encuentra en la linea 17 del codigo:</p>
+<pre class="r"><code>TRM &lt;- read_excel(&quot;~/Daniel Echavez/Ventas Serie de tiempo/Proyeccioes Nuevas/1.1.1.TCM_Serie histórica IQY (1).xlsx&quot;, 
+                                                     col_types = c(&quot;date&quot;, &quot;numeric&quot;), skip = 7)
+TRM &lt;- na.omit(TRM)</code></pre>
+<p></br></p>
+<p><em>Importante: La ruta del archivo deben ir con barra normal
+<code>/</code> , no con la barra inversa <code>\</code> ya que puede
+generar error en la carga del archivo.</em></p>
+<p></br></p>
+<p>Para los datos de inlfacion se encuentran en la linea 23 del
+codigo:</p>
+<pre class="r"><code>Inflacion &lt;- read_excel(&quot;~/Daniel Echavez/Ventas Serie de tiempo/Proyeccioes Nuevas/1.1.INF_Serie histórica Meta de inflación IQY.xlsx&quot;,
+                        col_types = c(&quot;numeric&quot;, &quot;numeric&quot;, &quot;skip&quot;, &quot;skip&quot;, &quot;skip&quot;), skip = 7)</code></pre>
+<p></br></p>
+<p>Para los datos del PPC estos se encuentran en la linea 37 del
+codigo:</p>
+<pre class="r"><code>PPC &lt;- read_excel(&quot;~/Daniel Echavez/Ventas Serie de tiempo/Proyeccioes Nuevas/Precio Promedio Contratos Energía (G).xlsx&quot;, 
+                  col_types = c(&quot;date&quot;, &quot;numeric&quot;, &quot;numeric&quot;, 
+                                &quot;numeric&quot;))</code></pre>
+<p></br></p>
+</div>
+<div id="segundo--" class="section level4">
+<h4><em>Segundo - </em></h4>
+</div>
+</div>
 
 
 
