@@ -13,7 +13,7 @@
 
 <title>Guia Archivo de Zona Franca</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -235,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -251,20 +255,12 @@ $(document).ready(function () {
     Zona Franca
   </a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+<li>
+  <a href="about.html">
     <span class="fa fa-solid fa-chart-simple"></span>
      
     Proyecciones
-     
-    <span class="caret"></span>
   </a>
-  <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-header">Heading 1</li>
-    <li class="dropdown-header">Page A</li>
-    <li class="divider"></li>
-    <li class="dropdown-header">Page B</li>
-  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -284,33 +280,52 @@ $(document).ready(function () {
 
 
 <p></br> </br></p>
-<div id="pasos-a-seguir-para-utilizar-el-programa" class="section level2">
+<div id="pasos-a-seguir-para-utilizar-el-programa"
+class="section level2">
 <h2>Pasos a Seguir para utilizar el programa</h2>
 <p></br> </br> </br></p>
 <ul>
 <li><strong>Primero:</strong></li>
 </ul>
-<p>En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.</p>
+<p>En esta parte del codigo tenemos que informarle al programa donde
+esta la base de datos inicial que vamos a modificar, esto lo hacemos
+cambiando la primera parte del codigo que empieza entre comillas, ya que
+la direccion que se encuentra en el codigo inicial que les envio es en
+donde se encuentra guardado en mi computador.</p>
 <pre class="r"><code>#Cargamos los datos
 X1666624860 &lt;- read_excel(&quot;D:/1- Escritorio organizado/Zona Franca e2/1666624860.xlsx&quot;, sheet = &quot;Data&quot;)</code></pre>
-<p>La direccion debe ir entre comillas, si borras las comillas debes volver a ponerlas.</p>
+<p>La direccion debe ir entre comillas, si borras las comillas debes
+volver a ponerlas.</p>
 <p></br></p>
-<p><font size="3"><em>Nota: las direcciones deben ir con barra normal <code>/</code> , no con la barra inversa <code>\</code> ya que puede generar error.</em> </font></p>
+<p><font size="3"><em>Nota: las direcciones deben ir con barra normal
+<code>/</code> , no con la barra inversa <code>\</code> ya que puede
+generar error.</em> </font></p>
 <p></br> </br> </br> </br></p>
 <ul>
 <li><strong>Segundo:</strong></li>
 </ul>
-<p>Luego, en la siguente linea de codigo <code>mypath</code> debemos indicarle la direccion donde queremos que se guarde nuestro archivo en formato excel una vez que corramos el codigo.</p>
+<p>Luego, en la siguente linea de codigo <code>mypath</code> debemos
+indicarle la direccion donde queremos que se guarde nuestro archivo en
+formato excel una vez que corramos el codigo.</p>
 <pre class="r"><code>mypath &lt;- &quot;D:/1- Escritorio organizado/Zona Franca e2/&quot;</code></pre>
-<p>Para esto hacemos lo mismo que el paso anterior, simplemente remplazamos la direccion que se encuentra entre comillas en el codigo por la nueva direccion.</p>
+<p>Para esto hacemos lo mismo que el paso anterior, simplemente
+remplazamos la direccion que se encuentra entre comillas en el codigo
+por la nueva direccion.</p>
 <p></br> </br> </br> </br></p>
 <ul>
 <li><strong>Tercero:</strong></li>
 </ul>
 <p>Listo, el codigo esta listo para utilizarlo.</p>
-<p>Seleccionamos de la linea 1 hasta la linea 22 del codigo. Presionamos el icono de <img src="D:/Descargass/Untitled%20(2).png" alt="Run" /> en la parte superior derecha. (<em>tambien su puede correr el codigo seleccionado con</em> <code>CTRL + ENTER</code>). Una vez realizado esto se creara un archivo llamado <em>filtro.xlsx</em> que contendra las columnas filtradas de la base de datos.</p>
+<p>Seleccionamos de la linea 1 hasta la linea 22 del codigo. Presionamos
+el icono de <img src="D:\Descargass\Untitled%20(2).png" alt="Run" /> en
+la parte superior derecha. (<em>tambien su puede correr el codigo
+seleccionado con</em> <code>CTRL + ENTER</code>). Una vez realizado esto
+se creara un archivo llamado <em>filtro.xlsx</em> que contendra las
+columnas filtradas de la base de datos.</p>
 <p></br> </br></p>
-<p><font size="3"> <em>Nota: Hay que tener en cuenta que este proceso se debe realizar cada vez que se tenga un archivo nuevo.</em> </font> </br> </br> </br> </br> </br> </br></p>
+<p><font size="3"> <em>Nota: Hay que tener en cuenta que este proceso se
+debe realizar cada vez que se tenga un archivo nuevo.</em> </font> </br>
+</br> </br> </br> </br> </br></p>
 </div>
 
 

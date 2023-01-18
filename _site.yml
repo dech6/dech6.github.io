@@ -9,11 +9,7 @@ navbar:
     - text: "Proyecciones"
       icon: fa-solid fa-chart-simple
       href: about.html
-      menu:
-        - text: "Heading 1"
-        - text: "Page A"
-        - text: "---------"
-        - text: "Page B"
+    
 output:
   html_document:
     theme: cosmo
