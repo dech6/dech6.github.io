@@ -9,7 +9,7 @@ title: "Guia Archivo de Zona Franca"
 </br>
 </br>
 </br>
-f
+
 #### *Primero - Carga de datos*
 
 En esta parte del codigo tenemos que informarle al programa donde esta la base de datos inicial que vamos a modificar, esto lo hacemos cambiando la primera parte del codigo que empieza entre comillas, ya que la direccion que se encuentra en el codigo inicial que les envio es en donde se encuentra guardado en mi computador.
@@ -40,7 +40,7 @@ Para esto hacemos lo mismo que el paso anterior, simplemente remplazamos la dire
 </br>
 </br>
 
-#### *Tercero*
+#### *Tercero - Ejecutar el codigo*
 
 Listo, el codigo esta listo para utilizarlo. 
 
